@@ -9,7 +9,8 @@ class Portfolio extends Component {
       <div className="container text-center">
         <br />
         <br />
-        <h2>Portfolios</h2>
+        
+
       </div>
     );
   }

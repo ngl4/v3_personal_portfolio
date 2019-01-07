@@ -1,6 +1,13 @@
 .heading-background {
-    background-color: #34495E;  
+    /* background-color: #34495E;   */
     height: 55rem;
+    background: url("./images/rain.jpg");
+}
+
+.subSection {
+    height: 20rem;
+    background: url("./images/rain.jpg");
+
 }
 
 .margin-top {
@@ -18,7 +25,8 @@
 }
 
 .about-background {
-    height: 55rem;
+    height: 60rem;
+    border-bottom: 1px solid lightgray;
 }
 
 .portfolio-bg {

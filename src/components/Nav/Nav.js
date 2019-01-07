@@ -8,7 +8,7 @@ class Nav extends Component {
       <nav className="p-3 fixed-top">
         <div className="ml-5 d-flex justify-content-between text-white font-weight-bold">
           <div className="mr-5">
-            <span onclick={this.props.onclick}><img src={this.props.image} alt="logo" /></span>
+            <span onclick={this.props.onclick}><img src={this.props.image} alt="logo" className="img-logo" /></span>
           </div>
 
           <div className="d-flex mr-5">

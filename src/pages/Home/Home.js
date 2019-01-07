@@ -50,6 +50,7 @@ class Home extends Component {
     });
   }
 
+
   render() {
     return (
       <div>
@@ -103,12 +104,16 @@ class Home extends Component {
             </div>
           </ScrollableAnchor>
 
+          <div className="subSection"></div>
+
         {/* Portfolio Page */}
           <ScrollableAnchor id={"Portfolio"}>
             <div className="portfolio-bg">
             <Portfolio />
             </div>
           </ScrollableAnchor>
+
+          <div className="subSection"></div>
 
         {/* Contact Page */}
           <ScrollableAnchor id={"Contact"}>
