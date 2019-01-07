@@ -1,0 +1,30 @@
+.heading-background {
+    background-color: #34495E;  
+    height: 55rem;
+}
+
+.margin-top {
+    margin-top: 16rem !important;
+}
+
+.heading-button {
+    border-color: white;
+    background: none;
+    color:white;
+}
+
+.heading-font {
+    text-shadow: 1px 1px darkgray;
+}
+
+.about-background {
+    height: 55rem;
+}
+
+.portfolio-bg {
+    height: 55rem;
+}
+
+.contact-bg {
+    height: 55rem;
+}
