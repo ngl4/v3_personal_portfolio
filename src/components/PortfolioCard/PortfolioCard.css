@@ -1,0 +1,10 @@
+.showDescription {
+    display: none;
+}
+
+.projects:hover .showDescription{
+    display: block;
+    z-index: 2;
+    background-color: gray;
+    opacity: 0.8;
+}
