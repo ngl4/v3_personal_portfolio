@@ -50,6 +50,10 @@ class Home extends Component {
     });
   }
 
+  openInNewTab(url) {
+    const win = window.open(url, "_blank");
+    win.focus();
+  }
 
   render() {
     return (
@@ -118,7 +122,7 @@ class Home extends Component {
         {/* Contact Page */}
           <ScrollableAnchor id={"Contact"}>
             <div className="contact-bg">
-            <Contact />
+            <Contact githublink={() => this.openInNewTab("https://github.com/ngl4")} linkedinlink={() => this.openInNewTab("https://www.linkedin.com/in/binh-cindy-lam-49524a84/")} />
             </div>
           </ScrollableAnchor>
         </div>

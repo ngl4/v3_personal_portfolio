@@ -27,7 +27,7 @@ class Portfolio extends Component {
         <br />
         <br />
         <br />
-        <div class="card-columns">
+        <div className="card-columns">
           <PortfolioCard
             src={BegsListImg}
             name="Beg's List"
