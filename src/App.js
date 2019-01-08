@@ -8,7 +8,7 @@ const App = () => {
     <Router>
       <div>
         <Switch>
-          <Route exact path="/v3_personal_portfolio" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route component={NoMatch} />
         </Switch>
       </div>
