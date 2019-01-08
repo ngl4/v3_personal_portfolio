@@ -2,7 +2,7 @@
   "name": "v3_personal_portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ngl4.github.io/v3_personal_portfolio",
+  "homepage": "https://ngl4.github.io/v3_personal_portfolio",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.7.0",
@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
