@@ -10,6 +10,7 @@ import ScrollableAnchor from "react-scrollable-anchor";
 import LogoWhite from "../../components/Nav/images/mylogoDesignDec2018-white.png";
 import LogoDark from "../../components/Nav/images/mylogoDesignDec2018.png"
 import ScrollBtn from "../../components/ScrollBtn";
+import axios from "axios";
 
 const scroll = {
     opacity: '0.3',
@@ -40,6 +41,7 @@ class Home extends Component {
     scrollStepInPx: 50,
     delayInMs: 16.66
   };
+  
 
   componentDidMount() {
     document.addEventListener('scroll', () => {
@@ -48,6 +50,11 @@ class Home extends Component {
           this.setState({ isTop })
       }
     });
+
+    setInterval(() => {
+      axios.get("http://shrouded-springs-83346.herokuapp.com");
+    }, 900000); // every 15 minutes (900000)
+
   }
 
   openInNewTab(url) {
