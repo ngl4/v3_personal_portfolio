@@ -7,7 +7,7 @@ const App = () => {
     <Router>
       <div>
         <Switch>
-          <Route exact path="https://ngl4.github.io/v3_personal_portfolio" component={Home} />
+          <Route exact path="/" component={Home} />
         </Switch>
       </div>
     </Router>
