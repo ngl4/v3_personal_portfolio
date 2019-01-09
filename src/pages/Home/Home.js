@@ -10,7 +10,6 @@ import ScrollableAnchor from "react-scrollable-anchor";
 import LogoWhite from "../../components/Nav/images/mylogoDesignDec2018-white.png";
 import LogoDark from "../../components/Nav/images/mylogoDesignDec2018.png"
 import ScrollBtn from "../../components/ScrollBtn";
-import axios from "axios";
 
 const scroll = {
     opacity: '0.3',
@@ -51,10 +50,6 @@ class Home extends Component {
       }
     });
 
-    setInterval(() => {
-      axios.get("http://shrouded-springs-83346.herokuapp.com");
-    }, 900000); // every 15 minutes (900000)
-
   }
 
   openInNewTab(url) {
@@ -72,7 +67,7 @@ class Home extends Component {
             ContactUrl="#Contact"
             image={this.state.isTop ? LogoWhite : LogoDark }
             style={this.state.isTop ?  {opacity: 0.6, color: "#ffffff" }:{opacity: 0.6, color: "#000000" } }
-            onclick={this.scrollToTop}
+            onClick={this.scrollToTop}
           />
         {/* <h2 style={{ position: 'fixed', top: 0 }}>Scroll {this.state.isTop ? 'down' : 'up'}!</h2> */}
 
