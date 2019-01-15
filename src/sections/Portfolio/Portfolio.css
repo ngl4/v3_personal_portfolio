@@ -1,3 +1,11 @@
 .card-column {
     border-bottom: none !important;
 }
+
+.portfolio-bg {
+    height: 60rem;
+}
+
+.portfolio-bg-small {
+    height: 115rem;
+}

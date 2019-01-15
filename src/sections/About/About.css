@@ -1,5 +1,10 @@
+.about-background {
+    height: 60rem;
+    border-bottom: 1px solid lightgray;
+}
+
 .img-self {
-    height: 30rem;
+    height: 60%;
     position: absolute;
     z-index:9999;
     box-shadow: 10px 18px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -7,7 +12,7 @@
 }
 
 .img-blur {
-    height: 30rem;
+    height: 60%;
     position: absolute; 
     top: 90px;
     left: 150px;
@@ -19,11 +24,72 @@
 }
 
 .img-moreBlur {
-    height: 30rem;
+    height: 60%;
     position: relative;
     top: 150px;
     left: 40px;
     z-index: -9999;
 
 
+}
+
+.about-background-medium {
+    height: 60rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.row-size-medium {
+    height: 40rem;
+}
+
+.img-self-medium {
+    height: 50%;
+    position: absolute;
+    z-index:9999;
+    box-shadow: 10px 18px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.img-blur-medium {
+    height: 50%;
+    position: absolute; 
+    top: 90px;
+    left: 150px;
+    z-index: -8888;
+}
+
+.img-moreBlur-medium {
+    height: 50%;
+    position: relative;
+    top: 150px;
+    left: 40px;
+    z-index: -9999;
+}
+
+.about-background-small {
+    height: 50rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.img-self-small {
+    height: 25%;
+    position: absolute;
+    z-index:9999;
+    box-shadow: 10px 18px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-blur-small {
+    height: 10%;
+    position: absolute; 
+    top: 5%;
+    left: 150px;
+    z-index: -8888;
+}
+
+.img-moreBlur-small {
+    height: 10%;
+    position: relative;
+    top: 150px;
+    left: 40px;
+    z-index: -9999;
 }

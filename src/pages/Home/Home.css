@@ -10,6 +10,11 @@
 
 }
 
+.subSection-small {
+    height: 10px;
+    background: url("./images/rain.jpg");
+}
+
 .margin-top {
     margin-top: 16rem !important;
 }
@@ -24,15 +29,5 @@
     text-shadow: 1px 1px darkgray;
 }
 
-.about-background {
-    height: 60rem;
-    border-bottom: 1px solid lightgray;
-}
 
-.portfolio-bg {
-    height: 56rem;
-}
 
-.contact-bg {
-    height: 57rem;
-}
