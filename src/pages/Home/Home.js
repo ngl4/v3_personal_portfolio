@@ -57,7 +57,8 @@ class Home extends Component {
 
   openInNewTab(url) {
     const win = window.open(url, "_blank");
-    win.focus();
+    return win;
+    //win.focus();
   }
 
   render() {
