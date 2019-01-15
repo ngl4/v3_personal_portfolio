@@ -35,7 +35,7 @@ const About = () => (
               <p>
                 {" "}
                 I am an American, was born in Vietnam, and am ethnically
-                Chinese. I can also speak Mandarin, Cantonese, English, and
+                Chinese. I can also speak Mandarin, Cantonese, and
                 Vietnamese.
               </p>
               <br />
@@ -89,7 +89,7 @@ const About = () => (
               <p>
                 {" "}
                 I am an American, was born in Vietnam, and am ethnically
-                Chinese. I can also speak Mandarin, Cantonese, English, and
+                Chinese. I can also speak Mandarin, Cantonese, and
                 Vietnamese.
               </p>
               <br />
@@ -140,7 +140,7 @@ const About = () => (
               <p>
                 {" "}
                 I am an American, was born in Vietnam, and am ethnically
-                Chinese. I can also speak Mandarin, Cantonese, English, and
+                Chinese. I can also speak Mandarin, Cantonese, and
                 Vietnamese.
               </p>
               <br />

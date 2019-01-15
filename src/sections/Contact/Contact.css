@@ -2,10 +2,14 @@
     margin-bottom: 12rem;
 }
 
+.contact-margin-small {
+    margin-bottom: 5rem;
+}
+
 .contact-bg {
     height: 62rem;
 }
 
 .contact-bg-small {
-    height: 47rem;
+    height: 50rem;
 }

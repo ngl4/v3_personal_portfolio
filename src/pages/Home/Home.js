@@ -64,46 +64,60 @@ class Home extends Component {
     return (
       <div>
         <div>
-        <BreakpointProvider>
-        <Breakpoint small down>
-          <SideNav 
-          AboutUrl="#About"
-          PortfolioUrl="#Portfolio"
-          ContactUrl="#Contact"
-          image={this.state.isTop ? LogoWhite : LogoDark}
-          />
-        </Breakpoint>
-        <Breakpoint medium up>
-          <Nav
-            AboutUrl="#About"
-            PortfolioUrl="#Portfolio"
-            ContactUrl="#Contact"
-            image={this.state.isTop ? LogoWhite : LogoDark}
-            style={
-              this.state.isTop
-                ? { opacity: 0.6, color: "#ffffff" }
-                : { opacity: 0.6, color: "#000000" }
-            }         
-             />
-          </Breakpoint>
+          <BreakpointProvider>
+            <Breakpoint small down>
+              <SideNav
+                AboutUrl="#About"
+                PortfolioUrl="#Portfolio"
+                ContactUrl="#Contact"
+                image={this.state.isTop ? LogoWhite : LogoDark}
+              />
+            </Breakpoint>
+            <Breakpoint medium up>
+              <Nav
+                AboutUrl="#About"
+                PortfolioUrl="#Portfolio"
+                ContactUrl="#Contact"
+                image={this.state.isTop ? LogoWhite : LogoDark}
+                style={
+                  this.state.isTop
+                    ? { opacity: 0.6, color: "#ffffff" }
+                    : { opacity: 0.6, color: "#000000" }
+                }
+              />
+            </Breakpoint>
 
-          {/* <h2 style={{ position: 'fixed', top: 0 }}>Scroll {this.state.isTop ? 'down' : 'up'}!</h2> */}
+            {/* <h2 style={{ position: 'fixed', top: 0 }}>Scroll {this.state.isTop ? 'down' : 'up'}!</h2> */}
 
-          <div className="jumbotron jumbotron-fluid heading-background text-white">
-            <div className="container mb-5 text-center margin-top heading-font">
-              <h3>
-                <Typed
-                  strings={[
-                    "<h1>Binh (Cindy) Lam</h1> <h5>A Full Stack Web Developer</h5>"
-                  ]}
-                  typeSpeed={100}
-                  cursorChar="</>"
-                />
-              </h3>
-              <br />
+            <div className="jumbotron jumbotron-fluid heading-background text-white">
+              <div className="container mb-5 text-center margin-top heading-font">
+                <Breakpoint small down>
+                  <h3>
+                    <Typed
+                      strings={[
+                        "<h3>Binh (Cindy) Lam</h1> <h5>A Full Stack Web Developer</h3>"
+                      ]}
+                      typeSpeed={100}
+                      cursorChar="</>"
+                    />
+                  </h3>
+                </Breakpoint>
 
-              {/* Typing npm is more customized, but there is some visual display issues when scrolling */}
-              {/* <Typing speed={50}>
+                <Breakpoint medium up>
+                  <h3>
+                    <Typed
+                      strings={[
+                        "<h1>Binh (Cindy) Lam</h1> <h5>A Full Stack Web Developer</h5>"
+                      ]}
+                      typeSpeed={100}
+                      cursorChar="</>"
+                    />
+                  </h3>
+                </Breakpoint>
+                <br />
+
+                {/* Typing npm is more customized, but there is some visual display issues when scrolling */}
+                {/* <Typing speed={50}>
                 <h2 className="h2">
                   WELCOME...
                   <Typing.Delay ms={400} />
@@ -118,42 +132,57 @@ class Home extends Component {
                 <p className="h4">A Full Stack Web Developer</p>
               </Typing> */}
 
-              {/* <a className="btn btn-light heading-button" href="/">Find Out More</a> */}
+                {/* <a className="btn btn-light heading-button" href="/">Find Out More</a> */}
+              </div>
             </div>
-          </div>
 
-          {/* About Page */}
-          <ScrollableAnchor id={"About"}>
-          <div><About /></div>
-          </ScrollableAnchor>
+            {/* About Page */}
+            <ScrollableAnchor id={"About"}>
+              <div>
+                <About />
+              </div>
+            </ScrollableAnchor>
 
-          <div className="subSection" />
+            <Breakpoint small down>
+            <div className="subSection-small" />
+            </Breakpoint>
 
-          {/* Portfolio Page */}
-          <ScrollableAnchor id={"Portfolio"}>
-          <div><Portfolio /></div>
-          </ScrollableAnchor>
+            <Breakpoint medium up>
+            <div className="subSection" />
+            </Breakpoint>
 
-          <div className="subSection" />
+            {/* Portfolio Page */}
+            <ScrollableAnchor id={"Portfolio"}>
+              <div>
+                <Portfolio />
+              </div>
+            </ScrollableAnchor>
 
-          {/* Contact Page */}
-          <ScrollableAnchor id={"Contact"}>
-            <div>
-              <Contact
-                githublink={() => this.openInNewTab("https://github.com/ngl4")}
-                linkedinlink={() =>
-                  this.openInNewTab(
-                    "https://www.linkedin.com/in/binh-cindy-lam-49524a84/"
-                  )
-                }
-              />
-            </div>
-          </ScrollableAnchor>
+            <Breakpoint small down>
+            <div className="subSection-small" />
+            </Breakpoint>
 
+            <Breakpoint medium up>
+            <div className="subSection" />
+            </Breakpoint>
+
+            {/* Contact Page */}
+            <ScrollableAnchor id={"Contact"}>
+              <div>
+                <Contact
+                  githublink={() =>
+                    this.openInNewTab("https://github.com/ngl4")
+                  }
+                  linkedinlink={() =>
+                    this.openInNewTab(
+                      "https://www.linkedin.com/in/binh-cindy-lam-49524a84/"
+                    )
+                  }
+                />
+              </div>
+            </ScrollableAnchor>
           </BreakpointProvider>
-
         </div>
-
 
         {this.state.isTop ? (
           ""
