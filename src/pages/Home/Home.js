@@ -90,9 +90,9 @@ class Home extends Component {
 
             {/* <h2 style={{ position: 'fixed', top: 0 }}>Scroll {this.state.isTop ? 'down' : 'up'}!</h2> */}
 
-            <div className="jumbotron jumbotron-fluid heading-background text-white">
-              <div className="container mb-5 text-center margin-top heading-font">
-                <Breakpoint small down>
+            <Breakpoint small down>
+              <div className="jumbotron jumbotron-fluid heading-background-small text-white">
+                <div className="container mb-5 text-center margin-top heading-font">
                   <h3>
                     <Typed
                       strings={[
@@ -102,9 +102,14 @@ class Home extends Component {
                       cursorChar="</>"
                     />
                   </h3>
-                </Breakpoint>
+                  <br />
+                </div>
+              </div>
+            </Breakpoint>
 
-                <Breakpoint medium up>
+            <Breakpoint medium up>
+              <div className="jumbotron jumbotron-fluid heading-background text-white">
+                <div className="container mb-5 text-center margin-top heading-font">
                   <h3>
                     <Typed
                       strings={[
@@ -114,11 +119,13 @@ class Home extends Component {
                       cursorChar="</>"
                     />
                   </h3>
-                </Breakpoint>
-                <br />
+                  <br />
+                </div>
+              </div>
+            </Breakpoint>
 
-                {/* Typing npm is more customized, but there is some visual display issues when scrolling */}
-                {/* <Typing speed={50}>
+            {/* Typing npm is more customized, but there is some visual display issues when scrolling */}
+            {/* <Typing speed={50}>
                 <h2 className="h2">
                   WELCOME...
                   <Typing.Delay ms={400} />
@@ -133,9 +140,7 @@ class Home extends Component {
                 <p className="h4">A Full Stack Web Developer</p>
               </Typing> */}
 
-                {/* <a className="btn btn-light heading-button" href="/">Find Out More</a> */}
-              </div>
-            </div>
+            {/* <a className="btn btn-light heading-button" href="/">Find Out More</a> */}
 
             {/* About Page */}
             <ScrollableAnchor id={"About"}>
@@ -145,11 +150,11 @@ class Home extends Component {
             </ScrollableAnchor>
 
             <Breakpoint small down>
-            <div className="subSection-small" />
+              <div className="subSection-small" />
             </Breakpoint>
 
             <Breakpoint medium up>
-            <div className="subSection" />
+              <div className="subSection" />
             </Breakpoint>
 
             {/* Portfolio Page */}
@@ -160,11 +165,11 @@ class Home extends Component {
             </ScrollableAnchor>
 
             <Breakpoint small down>
-            <div className="subSection-small" />
+              <div className="subSection-small" />
             </Breakpoint>
 
             <Breakpoint medium up>
-            <div className="subSection" />
+              <div className="subSection" />
             </Breakpoint>
 
             {/* Contact Page */}

@@ -4,6 +4,11 @@
     background: url("./images/rain.jpg");
 }
 
+.heading-background-small {
+    height: 45rem;
+    background: url("./images/rain.jpg");
+}
+
 .subSection {
     height: 18rem;
     background: url("./images/rain.jpg");
