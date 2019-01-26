@@ -13,3 +13,29 @@
 .contact-bg-small {
     height: 45rem;
 }
+
+.mail-button {
+    background-color: white;
+    border: none;
+}
+
+#Popover1:active {
+    background-color: white;
+    border: white;
+
+}
+
+.mail-button:hover {
+    background-color: white;
+    border: none;
+}
+
+.mail-button:visited {
+    background-color: white;
+    border: none;
+}
+
+.mail-button:focus {
+    background-color: white;
+    border: none;
+}

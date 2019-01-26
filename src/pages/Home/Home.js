@@ -13,9 +13,6 @@ import ScrollBtn from "../../components/ScrollBtn";
 import Breakpoint, { BreakpointProvider } from "react-socks";
 import SideNav from "../../components/SideNav";
 
-//ADD BREAKPOINTS:
-//TODO: Portfolio: Medium (icon size)
-
 const scroll = {
   opacity: "0.3",
   backgroundColor: "gray",

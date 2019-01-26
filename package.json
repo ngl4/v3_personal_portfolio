@@ -7,6 +7,7 @@
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
     "react": "^16.7.0",
+    "react-awesome-popover": "^3.1.1",
     "react-dom": "^16.7.0",
     "react-responsive": "^6.0.1",
     "react-router-dom": "^4.3.1",
@@ -14,7 +15,8 @@
     "react-scrollable-anchor": "^0.6.1",
     "react-socks": "^1.0.0",
     "react-typed": "^1.1.0",
-    "react-typing-animation": "^1.6.2"
+    "react-typing-animation": "^1.6.2",
+    "reactstrap": "^7.1.0"
   },
   "scripts": {
     "predeploy": "npm run build",
