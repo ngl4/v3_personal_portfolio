@@ -17,7 +17,7 @@
   }
   
   .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 0px;
     text-decoration: none;
     font-size: 20px;
     color: #f7f5f5;
@@ -61,4 +61,47 @@
   .img-logo {
     width: 2.2rem;
     opacity: 0.6;
+}
+
+.waves a {
+  display: inline-block;
+  position: relative;
+  margin-top: 1em;
+}
+
+.waves {
+    list-style-type: none;
+}
+
+.waves a:hover::before,
+.waves a:hover::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 90%;
+  height: 20px;
+  bottom: -5px;
+}
+
+.waves a:hover::before,
+.waves a:hover::after {
+  background: radial-gradient(20px, transparent, transparent 10px, white 10px, white 10px, transparent 13px);
+  background-size: 20px 40px;
+  background-position: 0 0;
+  animation: move 2s infinite linear;
+}
+
+/* .waves a:hover::after {
+  height: 20px;
+  bottom: -25px;
+  left: 0;
+  background-position: 15px -20px;
+  animation: move2 1s infinite linear;
+} */
+
+@keyframes move {
+  to { background-position-x: 60px }
+}
+@keyframes move2 {
+  to{ background-position-x: 75px }
 }
