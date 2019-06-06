@@ -178,7 +178,7 @@ class Home extends Component {
                   }
                   linkedinlink={() =>
                     this.openInNewTab(
-                      "https://www.linkedin.com/in/binh-cindy-lam-49524a84/"
+                      "https://www.linkedin.com/in/bcindylam/"
                     )
                   }
                 />
