@@ -196,7 +196,7 @@ class About extends Component {
                   </h6>
                   <p>"Kiss The Rain" by Yiruma</p>
                   <br />
-                  <span className="btn btn-secondary mt-3" onClick={() => this.openInNewTab("./assets/resume.pdf")}>
+                  <span className="btn btn-secondary mt-3" onClick={() => this.openInNewTab("./assets/Cindy_Lam_Resume_06_19.pdf")}>
                     My Resume
                   </span>
                 </div>
